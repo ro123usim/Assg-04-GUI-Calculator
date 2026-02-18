@@ -10,8 +10,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView" />
 
-    <Button
-        android:layout_width="wrap_content"
+    <Button android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Get My Version"
         android:onClick="getMyVersion"
@@ -19,6 +18,50 @@
         android:layout_below="@+id/textView"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_add"
+        android:background="@null"
+        android:onClick="onOperatorClick"
+        android:layout_below="@id/imageView1"
+        android:layout_marginTop="20dp"/>
+
+    <ImageButton
+        android:id="@+id/btnSubtract"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_subtract"
+        android:background="@null"
+        android:onClick="onOperatorClick"
+        android:layout_toRightOf="@id/btnAdd"
+        android:layout_alignTop="@id/btnAdd"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageButton
+        android:id="@+id/btnMultiply"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_multiply"
+        android:background="@null"
+        android:onClick="onOperatorClick"
+        android:layout_toRightOf="@id/btnSubtract"
+        android:layout_alignTop="@id/btnAdd"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageButton
+        android:id="@+id/btnDivide"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_divide"
+        android:background="@null"
+        android:onClick="onOperatorClick"
+        android:layout_toRightOf="@id/btnMultiply"
+        android:layout_alignTop="@id/btnAdd"
+        android:layout_marginLeft="20dp"/>
+
 
     <ImageView
         android:id="@+id/imageView1"
