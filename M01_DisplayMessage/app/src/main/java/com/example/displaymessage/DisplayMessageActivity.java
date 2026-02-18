@@ -23,7 +23,8 @@ public class DisplayMessageActivity extends AppCompatActivity {
         // Create the text view
         TextView textView = new TextView(this);
         textView.setTextSize(40);
-        textView.setText(message);
+        textView.setText(message + "\n\nHello from rousim !");
+
 
         // Set the text view as the activity layout
         setContentView(textView);
@@ -38,6 +39,12 @@ public class DisplayMessageActivity extends AppCompatActivity {
                 break;
             case "blue":
                 textView.setBackgroundColor(Color.BLUE);
+                break;
+            case "green":
+                textView.setBackgroundColor(Color.GREEN);
+                break;
+            case "yellow":
+                textView.setBackgroundColor(Color.YELLOW);
                 break;
             default: // Color not found...just use dark gray
                 textView.setBackgroundColor(Color.DKGRAY);
